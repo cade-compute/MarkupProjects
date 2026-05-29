@@ -1,16 +1,8 @@
-# Markdown Flavors Comparison
-
-A living comparison of syntax extensions across popular Markdown flavors and parsers.
-
-## About This Project
-
-This comparison helps developers, technical writers, and documentation maintainers understand which Markdown features are supported by different parsers and platforms. Whether you're choosing a Markdown flavor for a new project or migrating documentation, this resource provides a quick reference.
+# Comparison between Markdown Flavors and Replacements
 
 ### Original Work
 
-This project builds upon the excellent work by [@vimtaai](https://github.com/vimtaai) from their [markdown-flavors.md](https://gist.github.com/vimtaai/37c936679e8a2a2c22728f102eb7e8ae) comparison (2021). We've updated it for 2025 with modern flavors, new features, and community contributions.Completed collaboratively with Claude Sonnet 4.5 as a development partner and technical consultant.
-
-**Note:** The original comparison included **ExtraMark**, a student project that has been archived here for historical reference.
+Forked from [@ArchieCur](https://github.com/ArchieCur/MARKDOWN_FLAVORS) who built off work by [@vimtaai](https://github.com/vimtaai) from their [markdown-flavors.md](https://gist.github.com/vimtaai/37c936679e8a2a2c22728f102eb7e8ae) comparison (2021).
 
 ## Feature Support Matrix
 
@@ -30,6 +22,7 @@ This project builds upon the excellent work by [@vimtaai](https://github.com/vim
 | **MDX** | ❌ | ❌ | `~~text~~` * | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Quarto** | `^text^` | `~text~` | `~~text~~` | ❌ | ❌ | `[^1]` | `- [ ]` | ✅ | ❌ | `: ` | ❌ | `::: callout` | ❌ | ✅ | `$...$` | `$$...$$` | `:emoji:` |
 | **Markdown Extra** | ❌ | ❌ | ❌ | ❌ | ❌ | `[^1]` | ❌ | ✅ | `*[...]:` | `: ` | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Djot** | `^text^` | `~text~` | `{-text-}` | `{+text+}` | `{=text=}` | `[^1]` | `- [ ]` | ✅ | ❌ | `: ` | ❌ | `::: note` | ❌ | ❌ | ``$`...` `` | ``$$`...` `` | `:name:` * |
 
 **Legend:**
 - ✅ = Supported natively
@@ -92,6 +85,9 @@ Modern scientific and technical publishing system built on Pandoc, popular in da
 
 ### MDX
 Allows JSX components in Markdown, primarily used with React-based documentation sites.
+
+### Djot
+A newer lightweight markup syntax by John MacFarlane. Djot is CommonMark-inspired but more feature-rich, with built-in support for footnotes, definition lists, pipe tables, task lists, superscript, subscript, insert/delete, highlight, math, attributes, and generic containers. Its `:name:` symbol syntax is built in, but actual emoji rendering depends on filters or renderer support.
 
 ## Contributing
 
